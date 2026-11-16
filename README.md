@@ -13,7 +13,7 @@
 
 ### 📌 Sobre a Atividade
 
-Nesta etapa do projeto **Desafio Pit Wall (GP de São Paulo)**, desenvolvemos uma **landing page temática de Fórmula 1** utilizando **HTML5** e **CSS3**. A página apresenta informações sobre o circuito de Interlagos, grid de pilotos com identidade visual por escuderia, tabela de classificação do campeonato com filtros visuais e um formulário interativo para reserva de ingressos e envio de mensagens aos pilotos.
+Nesta etapa do projeto **Desafio Pit Wall (GP de São Paulo)**, desenvolvemos uma **landing page temática de Fórmula 1** utilizando **HTML5** e **CSS3**. A página apresenta informações sobre o circuito de Interlagos, grid de pilotos com identidade visual, tabela de classificação do campeonato com filtros visuais e um formulário interativo para reserva de ingressos e envio de mensagens aos pilotos.
 
 ---
 
@@ -63,6 +63,6 @@ Nesta etapa do projeto **Desafio Pit Wall (GP de São Paulo)**, desenvolvemos um
 
 ### 💡 Como me ajudou:
 
-> Compreendi na prática como combinar **Flexbox** e **CSS Grid** para organizar seções complexas em uma única página, além de dominar o uso de variáveis CSS para manter a consistência visual.A partir do desenvolvimento da atividade sistema musical, feita anteriormente, consegui compreender o desenvolvimento da estrutura semântica da página por meio do HTML5 e a estilização completa através do CSS, aplicando os conceitos já estudados de tipografia e teoria das cores. Também aprimorei a atenção aos detalhes na hierarquia e fechamento correto das tags HTML para evitar quebras de layout. Portanto, com o andamento dessa atividade consegui adquirir uma maior autonomia pro desenvolvimento front-end de páginas web.
+> Compreendi na prática como combinar **Flexbox** e **CSS Grid** para organizar seções  em uma única página, além de dominar o uso de variáveis CSS para manter a consistência visual.A partir do desenvolvimento da atividade sistema musical, feita anteriormente, consegui compreender o desenvolvimento da estrutura semântica da página por meio do HTML5 e a estilização completa através do CSS, aplicando os conceitos já estudados de tipografia e teoria das cores. Também aprimorei a atenção aos detalhes na hierarquia e fechamento correto das tags HTML para evitar quebras de layout. Portanto, com o andamento dessa atividade consegui adquirir uma maior autonomia pro desenvolvimento front-end de páginas web.
 
 ---

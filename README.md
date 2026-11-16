@@ -1,4 +1,4 @@
-<img src="https://demolab.com" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=4169E1&width=435&lines=Atividade+PIT+WALL" alt="Typing SVG" />
 
 <br>
 

@@ -1,0 +1,620 @@
+/*  CSS ATIVIDADE PITWALL */
+:root {
+    --black: #0b0b0f;
+    --panel: #16161d;
+    --input: #1d1d26;
+    --line: #282834;
+    --red: #e10600;
+    --red-hover: #ff1e17;
+    --white: #f5f5f7;
+    --muted: #8e8e9e;
+    --font: 'Titillium Web', 'Segoe UI', sans-serif;
+
+    /* Cores das Equipes */
+    --ferrari: #e10600;
+    --mclaren: #ff8000;
+    --mercedes: #00d2be;
+    --audi: #8c8c96;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* =========================================
+   PASSO 4: BARRA DO TOPO (.topbar)
+========================================= */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: var(--black);
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: var(--red);
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--muted);
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: var(--white);
+}
+
+.btn-primary {
+    background: var(--red);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    padding: 11px 22px;
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--red-hover);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--white);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    padding: 11px 22px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: inline-block;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.btn-outline:hover {
+    border-color: var(--white);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================
+   PASSO 5 e 6: HERO COM FAIXA INCLINADA E FOTO
+========================================= */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 480px;
+    padding: 60px 48px;
+    background:
+        linear-gradient(110deg,
+            var(--black) 0%, var(--black) 62%,
+            var(--red) 62%, var(--red) 64%,
+            rgba(11, 11, 15, 0.35) 64%),
+        url("img/img/carro.jpg") right center / cover no-repeat;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.eyebrow {
+    color: var(--red);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 0.92;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--red);
+}
+
+.hero-desc {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 420px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.track-info {
+    display: flex;
+    gap: 24px;
+}
+
+.info {
+    border-left: 1px solid var(--line);
+    padding-left: 18px;
+}
+
+.info strong {
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+}
+
+.info span {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   PASSO 7: ZEBRA DA PISTA (.kerb)
+========================================= */
+.kerb {
+    height: 12px;
+    background: repeating-linear-gradient(90deg,
+        var(--red) 0, var(--red) 40px,
+        var(--white) 40px, var(--white) 80px);
+    margin-bottom: 56px;
+}
+
+/* Títulos das seções (01, 02, 03) */
+section {
+    margin-bottom: 70px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+section h2 span {
+    color: var(--red);
+    font-size: 0.95rem;
+}
+
+/* =========================================
+   PASSO 8: CARDS DOS PILOTOS (.drivers)
+========================================= */
+.drivers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.ferrari  { --team: var(--ferrari); }
+.mclaren  { --team: var(--mclaren); }
+.mercedes { --team: var(--mercedes); }
+.audi     { --team: var(--audi); }
+
+.driver-card {
+    background: var(--panel);
+    border-top: 5px solid var(--team);
+    padding: 22px;
+    transition: transform 0.2s;
+}
+
+.driver-card:hover {
+    transform: translateY(-6px);
+}
+
+.car-number {
+    display: block;
+    font-size: 5rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    color: var(--team);
+    opacity: 0.35;
+    margin-bottom: 12px;
+}
+
+.driver-card h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.driver-card h3 strong {
+    font-weight: 900;
+    color: var(--white);
+}
+
+.driver-card p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+/* =========================================
+   PASSO 9: FILTROS E TABELA DE CLASSIFICAÇÃO
+========================================= */
+.filters {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    margin-bottom: 24px;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.filter-item label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+}
+
+.filter-item input,
+.filter-item select {
+    background: var(--input);
+    border: 1px solid var(--line);
+    color: var(--white);
+    padding: 10px 14px;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.filter-item input:focus,
+.filter-item select:focus {
+    border-color: var(--red);
+}
+
+.btn-filter {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 10px 24px;
+    font-family: var(--font);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-filter:hover {
+    background: var(--white);
+    color: var(--black);
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--panel);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    padding: 14px 18px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--line);
+}
+
+td {
+    padding: 14px 18px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--line);
+}
+
+tbody tr {
+    transition: background 0.15s;
+}
+
+tbody tr:hover {
+    background: #1e1e28;
+}
+
+.pos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--white);
+    color: var(--black);
+    font-weight: 900;
+    font-size: 0.85rem;
+}
+
+.leader {
+    background: rgba(225, 6, 0, 0.12);
+}
+
+.leader .pos {
+    background: var(--red);
+    color: var(--white);
+}
+
+.driver-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.bar {
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background: var(--team);
+}
+
+.points {
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.05rem;
+}
+
+/* =========================================
+   PASSO 10: INGRESSOS (.tickets e .form-grid)
+========================================= */
+.tickets {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.tickets-info p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.alert-box {
+    background: rgba(255, 193, 7, 0.12);
+    border-left: 4px solid #ffc107;
+    color: #ffd54f;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.price-list {
+    list-style: none;
+}
+
+.price-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.95rem;
+}
+
+.price-list strong {
+    color: var(--red);
+    font-weight: 900;
+    font-style: italic;
+}
+
+.ticket-form {
+    background: var(--panel);
+    border-top: 4px solid var(--red);
+    padding: 28px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full,
+.btn-primary.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: var(--input);
+    border: 1px solid var(--line);
+    color: var(--white);
+    padding: 10px 12px;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--red);
+}
+
+.form-group small {
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 4px;
+}
+
+/* =========================================
+   RODAPÉ
+========================================= */
+footer {
+    border-top: 1px solid var(--line);
+    padding: 28px 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+footer strong {
+    font-style: italic;
+    color: var(--white);
+}
+
+footer strong span {
+    color: var(--red);
+}
+
+/* =========================================
+   PASSO 11: RESPONSIVIDADE (CELULAR)
+========================================= */
+@media (max-width: 768px) {
+    .topbar {
+        padding: 16px 20px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        padding: 40px 20px;
+        background: var(--black);
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .drivers {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    table {
+        min-width: 620px;
+    }
+
+    td {
+        white-space: nowrap;
+    }
+
+    .tickets {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero h1 { font-size: 5.5rem; font-style: italic; }
+
+.hero h1 span { display: block; color: var(--red); }
+
+.track-info { display: flex; }
+
+.info { border-left: 1px solid var(--line); }
+
+.kerb {
+
+background: repeating-linear-gradient(90deg,
+
+var(--red) 0, var(--red) 40px,
+
+var(--white) 40px, var(--white) 80px);
+}
